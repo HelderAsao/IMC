@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modelo de exercicio</title>
     <link rel="stylesheet" href="/css/estilo.css">
 </head>
 <body>
     <header>
-
-<h1>IMC (índice de massa corporal)</h1>
-
+      <h1>IMC (índice de massa corporal)</h1>
     </header>
 
     <section>
+      <div>
+        <p>Calculadora <strong>IMC</strong></p>
 
-        <div>
-        Calculadora <strong>IMC</strong>
-
-        <p>Peso: <input type="number" name="txt1" id="txt1" > kg</p>
-        Altura: <input type="number" name="txt2" id="txt2" step="0.01" min="0"  > m 
-        <p><input type="radio" name="radsex" id="mas" checked>
-        <label for="mas">masculino</label>
-        <input type="radio" name="radsex" id="fem">
-        <label for="fem">feminino</label></p>
-        <p><input type="button" value="verificar" onclick=verificar()>
-        <input type="button" value="limpar " onclick="limpar()"></p>
-        </div>
-        <p><div id="res">
-            
-        </div></p>
-
+        <label for="peso">Peso: </label>
+        <input type="number" name="peso" id="peso" /> kg
+        <br />
+        <label for="altura">Altura: </label>
+        <input type="number" name="altura" id="altura" step="0.01" /> m
+        <p>
+          <input type="radio" name="radsex" id="mas" checked />
+          <label for="mas">masculino</label>
+          <input type="radio" name="radsex" id="fem" />
+          <label for="fem">feminino</label>
+        </p>
+        <p>
+          <input type="button" value="verificar" onclick="verificar()" />
+          <input type="button" value="limpar " onclick="limpar()" />
+        </p>
+      </div>
+      <p></p>
+      <div id="res"></div>
     </section>
 
     <footer>
-
-       <p> &copy;Cursoemvideo </p>
-
+      <p>&copy;Cursoemvideo</p>
     </footer>
     <script src="/js/script.js"></script>
 </body>
