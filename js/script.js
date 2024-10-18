@@ -58,7 +58,7 @@ function verificar() {
 
         }
         res.innerHTML += `${mensagem}, ${dica} <p>Veja a tabela abaixo para consultar:</p>`
-        img.setAttribute('src', 'IMC.png')
+        img.setAttribute('src', '../img/IMC.png')
         res.appendChild(img)
     }
 
