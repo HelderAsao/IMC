@@ -47,7 +47,7 @@ function verificar() {
     dica = `<p>Dica: Aqui o sinal é vermelho, com forte probabilidade de já existirem doenças muito graves associadas. O tratamento deve ser ainda mais urgente.</p>`;
   }
   res.innerHTML += `${mensagem}, ${dica} <p>Veja a tabela abaixo para consultar:</p>`;
-  img.setAttribute("src", "./img/IMC.png");
+  img.setAttribute("src", "../img/IMC.png");
   res.appendChild(img);
 }
 
